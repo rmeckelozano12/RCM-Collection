@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ryan & Ruth Wedding</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  color: #1f3552;
+  background: white;
+}
+
+.hero {
+  height: 100vh;
+  background:
+    linear-gradient(rgba(20, 40, 70, .35), rgba(20, 40, 70, .35)),
+    url("RCM3.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding-left: 8%;
+  color: white;
+}
+
+.hero-text {
+  max-width: 520px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 85px;
+  margin: 0;
+}
+
+.hero h3 {
+  letter-spacing: 3px;
+  font-size: 20px;
+  margin: 20px 0 5px;
+}
+
+.hero .and {
+  font-family: 'Great Vibes', cursive;
+  font-size: 35px;
+}
+
+.hero p {
+  font-family: 'Great Vibes', cursive;
+  font-size: 35px;
+  color: #b9d7f0;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 18px;
+  text-align: center;
+  z-index: 10;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 18px;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.white-section {
+  background: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.white-section h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 60px;
+  color: #2f5d8c;
+  margin: 0 0 20px;
+}
+
+.white-section p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.denim-section {
+  background: #2f5d8c;
+  color: white;
+  padding: 70px 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  text-align: center;
+}
+
+.card {
+  border-left: 1px solid rgba(255,255,255,.35);
+  padding: 20px;
+}
+
+.card:first-child {
+  border-left: none;
+}
+
+.card h3 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+button, .btn {
+  display: inline-block;
+  margin-top: 18px;
+  background: white;
+  color: #1f3552;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+}
+
+.quote {
+  padding: 50px 20px;
+  text-align: center;
+  color: #2f5d8c;
+  letter-spacing: 2px;
+}
+
+footer {
+  background: #1f3552;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  font-family: 'Great Vibes', cursive;
+  font-size: 28px;
+}
+
+@media(max-width: 800px) {
+  .hero {
+    padding: 20px;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 60px;
+  }
+
+  .denim-section {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    border-left: none;
+    border-top: 1px solid rgba(255,255,255,.35);
+  }
+
+  nav a {
+    font-size: 12px;
+    margin: 0 6px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="index.html">HOME</a>
+  <a href="details.html">DETAILS</a>
+  <a href="rsvp.html">RSVP</a>
+  <a href="registry.html">REGISTRY</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Ryan & Ruth</h1>
+    <h3>RYAN CARTER MCCALL</h3>
+    <div class="and">and</div>
+    <h3>RUTH CAITLIN MECKE-LOZANO</h3>
+    <p>We’re getting married!</p>
+  </div>
+</section>
+
+<section class="white-section" id="story">
+  <h2>Our Story</h2>
+  <p>
+    From meeting freshman year in CHEM 119 to now getting to spend the rest of our lives together. We cannot thank you enough for being a part of our journey and we are so excited to celebrate with you on our special day!
+  </p>
+</section>
+
+<section class="denim-section">
+  <div class="card" id="details">
+    <h3>Wedding Details</h3>
+    <p>Find all the important details about our big day.</p>
+    <a class="btn" href="details.html">VIEW DETAILS</a>
+  </div>
+
+  <div class="card" id="rsvp">
+    <h3>RSVP</h3>
+    <p>Please let us know if you’ll be joining us!</p>
+    <a class="btn" href="rsvp.html">RSVP NOW</a>
+  </div>
+
+  <div class="card" id="registry">
+    <h3>Registry</h3>
+    <p>Your presence is the best gift, but our registry is here.</p>
+    <a class="btn" href="registry.html">VIEW REGISTRY</a>
+  </div>
+
+  <div class="card">
+  <h3>Reception</h3>
+  <p>Celebrate with us after the ceremony with dinner, dancing, and love.</p>
+  <a class="btn" href="reception.html">VIEW RECEPTION</a>
+</div>
+</section>
+
+<section class="quote">
+  <h3>“I HAVE FOUND THE ONE WHOM MY SOUL LOVES.”</h3>
+  <p>— SONG OF SOLOMON 3:4 —</p>
+</section>
+
+<footer>
+  With love, Ryan & Ruth ♡
+</footer>
+
+</body>
+</html>
